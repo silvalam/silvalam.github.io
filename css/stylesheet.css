@@ -119,16 +119,16 @@ h1 {
 	white-space: nowrap;
 	line-height: 50px;
 	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 100px;
 }
 
 p {
 	margin: 0;
 	font-size: 1.25rem;
 	background-color: rgba(23, 44, 30, 0.7);
-	display: inline;
+	display: inline-block;
 	padding: 0.5rem;
-	line-height: 100px;
+	line-height: 25px;
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
@@ -149,6 +149,7 @@ a:hover {
     font-family: Georgia, Serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 25px;
 }
 
 #contactinfo td, #contactinfo th {
