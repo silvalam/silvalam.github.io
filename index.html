@@ -1,206 +1,79 @@
-<!DOCTYPE html> <!-- this is a document type declaration to let browser know which flavor of html -->
-<html lang="en"> <!-- everything between this opening tag appears in the browser window -->
-	<head> <!-- contains info about the page, info does not appear in browser window -->
-		<meta charset="utf-8">
-		<title> Home - Sylvia Lam </title> <!-- this is the tab title, bookmark and favorites title -->
-		<link rel="stylesheet" href="assets/stylesheets/main.css">
-	</head>
+<!DOCTYPE html>
+<html>
 
-	<body>
-		<section>
-		<!-- Main header of Page -->
+<head>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/script.js"></script>
+	<title> Sylvia Lam</title>
+</head>
+
+<body>
+	
+	<ul class="topnav" id="myTopnav">
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')"> Home </a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About')"> About </a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Portfolio')"> Portfolio </a></li>
+		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')"> Contact </a></li>
+		<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="navResize()">&#9776;</a></li> <!-- Resizing menu on mobile -->
+	</ul>
+	
+	
+	<div class="bg">
+		<div id="Home" class="tabcontent">
 			<header>
-				<div class="container clearfix">
-					<h1 id="sylvialam"> sylvia.lam </h1>
-					<nav>
-						<a href="#about"> About Me </a>
-						<a href="#gallery"> Gallery </a>
-					</nav>
-				</div>
-			</header> 
-		</section>
-
-		<div id="main">
-			<div class="container clearfix">
-				<div id="content">
-					<section id="about">
-						<div class="container">
-							<h2> About Me </h2>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-						</div>
-					</section>
-					<section class="color" id="gallery">
-						<div class="container">
-							<h2> Gallery </h2>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-							<p>
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-								Beep boop. Beep boop. Beep boop.
-							</p>
-						</div>
-					</section>
-				</div>
-			</div>
+				<h1> Home </h1>
+				<p> Welcome to my page. </p>
+			</header>
 		</div>
 
-		<footer>
-		<!-- Maybe a foot. What even should go here? -->
-		</footer>
-	</body>
+		<div id="About" class="tabcontent">
+			<header>
+				<h1> About </h1>
+				<p> Well I like rabbits. </p>
+			</header>
+		</div>
 
-	<script src="classie.js"></script>
-	<script>
-		function init() {
-		    window.addEventListener('scroll', function(e){
-		        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		            shrinkOn = 300,
-		            header = document.querySelector("header");
-		        if (distanceY > shrinkOn) {
-		            classie.add(header,"smaller");
-		        } else {
-		            if (classie.has(header,"smaller")) {
-		                classie.remove(header,"smaller");
-		            }
-		        }
-		    });
-		}
+		<div id="Portfolio" class="tabcontent">
+			<header>
+				<h1> Portfolio </h1>
+				<p> <a href="https://github.com/silvalam" target="_blank">Click for my Github.</a></p>
+			</header>
+		</div>
 
-		window.onload = init();	
+		<div id="Contact" class="tabcontent">
+			<header>
+				<h1> Contact </h1>
+				<p> Various ways you can reach me. </p>
+					<table id="contactinfo">
+						<tr>
+							<th> Medium </th>
+							<th> ID </th>
+							<th> Availability </th>
+						</tr>
+						<tr>
+							<td> E-mail </td>
+							<td> s.silva.lam@gmail.com </td>
+							<td> 24/7 </td>
+						</tr>
+						<tr>
+							<td> Skype </td>
+							<td> whyisobaka </td>
+							<td> 24/7 </td>
+						</tr>
+						<tr>
+							<td> Snapchat </td>
+							<td> silvalam </td>
+							<td> 24/7 </td>
+						</tr>
+						<tr>
+							<td> League of Legends </td>
+							<td> His Potato </td>
+							<td> Usually evening and night </td>
+						</tr>
+					</table>
+			</header>
+		</div>
+	</div>
+</body>
 
-		$.scrollTo = $.fn.scrollTo = function(x, y, options){
-		    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
-
-		    options = $.extend({}, {
-		        gap: {
-		            x: 0,
-		            y: 0
-		        },
-		        animation: {
-		            easing: 'swing',
-		            duration: 600,
-		            complete: $.noop,
-		            step: $.noop
-		        }
-		    }, options);
-
-		    return this.each(function(){
-		        var elem = $(this);
-		        elem.stop().animate({
-		            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
-		            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
-		        }, options.animation);
-		    });
-		};
-
-		var aChildren = $("nav li").children(); // find the a children of the list items
-	    var aArray = []; // create the empty aArray
-	    for (var i=0; i < aChildren.length; i++) {    
-	        var aChild = aChildren[i];
-	        var ahref = $(aChild).attr('href');
-	        aArray.push(ahref);
-	    } // this for loop fills the aArray with attribute href values
-
-	    $(window).scroll(function(){
-	        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-	        var windowHeight = $(window).height(); // get the height of the window
-	        var docHeight = $(document).height();
-
-	        for (var i=0; i < aArray.length; i++) {
-	            var theID = aArray[i];
-	            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-	            var divHeight = $(theID).height(); // get the height of the div in question
-	            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-	                $("a[href='" + theID + "']").addClass("nav-active");
-	            } else {
-	                $("a[href='" + theID + "']").removeClass("nav-active");
-	            }
-	        }
-
-	        if(windowPos + windowHeight == docHeight) {
-	            if (!$("nav li:last-child a").hasClass("nav-active")) {
-	                var navActiveCurrent = $(".nav-active").attr("href");
-	                $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-	                $("nav li:last-child a").addClass("nav-active");
-	            }
-	        }
-	    });
-	</script>
 </html>
