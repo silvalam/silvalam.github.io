@@ -1,80 +1,59 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvalam</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
 
-<head>
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<script src="js/script.js"></script>
-	<title> Sylvia Lam</title>
-</head>
+    <!-- Desktop Nav -->
+    <nav class="scrollhide-nav">
+    <div id="nav" class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Menu</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
 
-<body>
-	
-	<ul class="topnav" id="myTopnav">
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')"> Home </a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About')"> About </a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Portfolio')"> Portfolio </a></li>
-		<li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Contact')"> Contact </a></li>
-		<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="navResize()">&#9776;</a></li> <!-- Resizing menu on mobile -->
-	</ul>
-	
-	
-	<div class="bg">
-		<div id="Home" class="tabcontent">
-			<header>
-				<h1> Home </h1>
-				<p> Welcome to my page. </p>
-			</header>
-		</div>
+    <!-- Home Section-->
+    <section id="page1"> 
+      <a id="home" class="smooth"></a>
+    </section>
 
-		<div id="About" class="tabcontent">
-			<header>
-				<h1> About </h1>
-				<p> My name is Sylvia Lam. I graduated from University of California, Davis with a B.S. in Computer Science in 2016. 
-				    I have two rabbits called Peanut and Butters and they drive me crazy. And no they are not the ones in the background image. </p>
-			</header>
-		</div>
+    <!-- About Section-->
+    <section id="page2"> 
+      <a id="about" class="smooth"></a>
+    </section>
 
-		<div id="Portfolio" class="tabcontent">
-			<header>
-				<h1> Portfolio </h1>
-				<p> <a href="https://github.com/silvalam" target="_blank">Click for my Github.</a></p>
-			</header>
-		</div>
+    <!-- Portfolio Section-->
+    <section id="page3"> 
+      <a id="portfolio" class="smooth"></a>
+    </section> 
 
-		<div id="Contact" class="tabcontent">
-			<header>
-				<h1> Contact </h1>
-				<p> Various ways you can reach me. </p>
-					<table id="contactinfo">
-						<tr>
-							<th> Medium </th>
-							<th> ID </th>
-							<th> Availability </th>
-						</tr>
-						<tr>
-							<td> E-mail </td>
-							<td> s.silva.lam@gmail.com </td>
-							<td> 24/7 </td>
-						</tr>
-						<tr>
-							<td> Skype </td>
-							<td> whyisobaka </td>
-							<td> 24/7 </td>
-						</tr>
-						<tr>
-							<td> Snapchat </td>
-							<td> silvalam </td>
-							<td> 24/7 </td>
-						</tr>
-						<tr>
-							<td> League of Legends </td>
-							<td> His Potato </td>
-							<td> Usually evening and night </td>
-						</tr>
-					</table>
-			</header>
-		</div>
-	</div>
-</body>
+    <!-- Contact Section-->
+    <section id="page4"> 
+      <a id="contact" class="smooth"></a>
+    </section> 
 
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
