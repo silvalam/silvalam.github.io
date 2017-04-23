@@ -1,43 +1,219 @@
 /* General / Global Styles */
 
-/* Nav */
+.parallax {
+	height: 1020px;
+
+	/* Parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#bg-image1 {
+	background-image: url("../images/sylv1opacity.jpg");
+}
+
+#bg-image2 {
+	background-image: url("../images/sylv3opacity.jpg");
+}
+
+#bg-image3 {
+	background-image: url("../images/sylv2opacity.jpg");
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-family: 'Bitter', serif;
+	font-size: 3.0em;
+}
+
+/* Nav and quotes */
+
+.full-width-testimonial-icon .quote-path {
+  fill: none;
+  stroke: #ffae00;
+  stroke-width: 2.5192;
+  stroke-miterlimit: 10;
+}
+
+.full-width-testimonial-content,
+.full-width-testimonial-icon {
+  text-align: center;
+}
+
+.full-width-testimonial-section {
+  padding-top: 24rem;
+}
+
+.full-width-testimonial-section .full-width-testimonial-text {
+  font-weight: 300;
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: -5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.5em;
+}
+
+@media print, screen and (min-width: 40em) {
+  .full-width-testimonial-section .full-width-testimonial-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .full-width-testimonial-section .full-width-testimonial-text {
+    padding-left: 180px;
+    padding-right: 180px;
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .full-width-testimonial-section .full-width-testimonial-text {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.full-width-testimonial-section .full-width-testimonial-source {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 0;
+  margin-bottom: 0.2em;
+  font-size: 1.0em;
+}
+
+.full-width-testimonial-section .full-width-testimonial-source-context {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8em;
+}
+
+.full-width-testimonial-section .slick-slider {
+  margin-bottom: 0px;
+}
+
+.full-width-testimonial-text,
+.full-width-testimonial-content,
+.full-width-testimonial-source,
+.full-width-testimonial-icon {
+  padding-bottom: 2rem;
+}
+
+.full-width-testimonial-content {
+  width: 100%;
+}
 
 .scrollhide-nav {
-  position: fixed;
-  right: 0;
-  top: 0;
-  left: 0;
-  transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+	position: fixed;
+	right: 0;
+	top: 0;
+	left: 0;
+	transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+	transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+	transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .scrollhide-nav.hidden {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+  	-webkit-transform: translateY(-100%);
+  	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
-/* Home */
+#nav {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #035874;
+}
 
-#page1 {
-	height: 1000px;
+a:link {
+	background-color: #035874;
+}
+
+a:hover {
+	color: white;
 }
 
 /* About */
 
-#page2 {
-	height: 1000px;
+#page1 {
+	height: 478px;
 }
 
 /* Portfolio */
 
-#page3 {
-	height: 1000px;
+#page2 {
+	height: 650px;
+}
+
+.header-grid {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle" "big-bottom big-bottom big-bottom big-bottom big-bottom";
+}
+
+.block {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  background: #035874;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+}
+
+.block:hover {
+  transition: opacity 0.2s ease-in;
+  opacity: 1;
+}
+
+#b1 {
+  grid-area: big-top;
+}
+
+#b2 {
+  grid-area: small-top;
+}
+
+#b3 {
+  grid-area: small-middle;
+}
+
+#b4 {
+  grid-area: big-middle;
+}
+
+.bottom-block {
+  grid-area: big-bottom;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Contact */
 
-#page4 {
-	height: 1000px;
+#page3 {
+	height: 478px;
 }
